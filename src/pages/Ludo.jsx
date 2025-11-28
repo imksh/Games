@@ -90,7 +90,7 @@ const Ludo = () => {
             jump(p2 + n, setP2);
           }, 100);
         }
-      }, i * 500);
+      }, i * 300);
     }
     setDice2(n);
     if (p2 + n >= 100) {
