@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.gradient1 {
+  background-image: linear-gradient(
+    to right bottom,
+    #3c8df7,
+    #009bf9,
+    #00a8f7,
+    #00b3f2,
+    #12bdeb
+  );
+}
+
+/* Run game */
+.runContainer {
+}
+.runner {
+  animation: rotate 2s linear infinite;
+}
+
+.jump {
+  animation: jump 3s linear;
+}
+
+.obstacle {
+  animation: scrollHorizontal 5s linear infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scrollHorizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
